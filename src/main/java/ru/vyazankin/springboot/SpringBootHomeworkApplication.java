@@ -1,13 +1,13 @@
-package ru.vyazankin.springboot.sprongboothomework;
+package ru.vyazankin.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SprongBootHomeworkApplication {
+public class SpringBootHomeworkApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SprongBootHomeworkApplication.class, args);
+		SpringApplication.run(SpringBootHomeworkApplication.class, args);
 	}
 
 }

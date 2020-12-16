@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <title>All products</title>
+    <div class="container">
+        <h1>Edit product</h1>
+
+        <form th:action = "@{/updateproduct}" method="post">
+            <table class="table table-hover">
+                <thead class="thead-light">
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>PRICE</th>
+                    <th>ACTION</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td><input type="text" name="id" class="form-control" placeholder="New product ID" th:value = "${product.id}"></td>
+                    <td><input type="text" name="name" class="form-control" placeholder="New product name" th:value = "${product.name}"></td>
+                    <td><input type="text" name="cost" class="form-control" placeholder="New product cost" th:value = "${product.cost}"></td>
+                    <td>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <a class="btn btn-primary" th:href="@{/edit}">Cancel</a>
+                        <a class="btn btn-danger" th:href="@{'/remove/' + ${product.id}}">Delete</a>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</head>
+<body>
+
+</body>
+</html>

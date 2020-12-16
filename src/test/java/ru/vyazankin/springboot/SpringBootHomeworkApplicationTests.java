@@ -1,10 +1,10 @@
-package ru.vyazankin.springboot.sprongboothomework;
+package ru.vyazankin.springboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SprongBootHomeworkApplicationTests {
+class SpringBootHomeworkApplicationTests {
 
 	@Test
 	void contextLoads() {
